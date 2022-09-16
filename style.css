@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-grey: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --cyan-light: rgb(74, 190, 189);
+  --grey: rgb(176, 179, 193);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--light-grey);
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 375px;
+  margin: 1.5em;
+}
+
+.container>div {
+  padding: 1.5em;
+  width: 100%;
+}
+
+.box1 {
+  background-color: white;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.box2 {
+  background-color: var(--cyan);
+  color: white;
+  width: 100%;
+  font-weight: 700;
+}
+
+.box3 {
+  background-color: var(--cyan-light);
+  color: white;
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+}
+.box3 p{
+  margin-right: 35%;
+  font-weight: 400;
+  margin-top: 1em;
+  line-height: 1.5em;
+}
+
+.box1 h1 {
+  color: var(--cyan-light);
+  font-size: 1.5em;
+}
+
+.box1 h2 {
+  color: var(--bright-yellow);
+  font-size: 1.25em;
+  padding-block: 1em;
+}
+
+.box1 p {
+  font-weight: 700;
+  color: var(--grey);
+  line-height: 1.6em;
+  margin-block: .4em;
+}
+
+
+
+.box2 h2 {
+  padding-block-end: .4em;
+}
+
+
+.price {
+  color: var(--light-grey);
+  font-weight: 700;
+}
+
+.price-29 {
+  font-size: 2.25em;
+  color: white;
+}
+
+.text-access {
+  color: var(--light-grey);
+  padding-block: .3em;
+}
+
+.btn {
+  background-color: var(--bright-yellow);
+  font-size: 1.5em;
+  width: 100%;
+  border-radius: .3em;
+  border: 0;
+  padding: .7em;
+  margin-top: 1.25em;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.btn:active {
+  background-color: hsla(71, 94%, 57%, 0.55);
+}
+footer {
+  margin-bottom: 1.25em;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
